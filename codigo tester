@@ -1,0 +1,56 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+<html>
+<head>
+<title>Code Tester</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<center>
+<font face="verdana" color="#000000"><h2>:: Code Tester ::</h2></font>
+</center>
+<script type="text/javascript" language="javascript">
+function preview(){
+temp=document.tester.box.value;
+preWindow=open("","preWindow","menubar=yes,scrollbars=yes,status=yes");
+preWindow.document.open();
+preWindow.document.write(temp);
+preWindow.document.close();
+};
+</script>
+<center>
+<form name="tester">
+<textarea rows="22" cols="88" wrap="physical" name="box" style="border:1px solid;overflow:auto"></textarea>
+<br><hr width="720" size="1" color="#000000" noshade>
+<input type="button" value="Test Code" onClick="preview()" style="border:1px solid;background:#FFFFFF;width:200px">
+<input type="reset" value="Reset Code" style="border:1px solid;background:#FFFFFF;width:200px">
+<br><hr width="720" size="1" color="#000000" noshade>
+</form>
+</center>
+</body>
+</html>
